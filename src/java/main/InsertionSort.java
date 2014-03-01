@@ -1,5 +1,5 @@
 
-public class Project1 {
+public class InsertionSort {
 	public static void insertion_srt(int array[], int n) {
 		for (int i = 1; i < n; i++) {
 			int j = i;
