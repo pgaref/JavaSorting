@@ -51,25 +51,25 @@ public class Main {
 				arguments.add(args[3].charAt(i)+"");
 		}
 		
-		//System.out.println("In: "+ infile +" Out: "+ outfile +" Sort: "+ sortingAlg + " Arguments: " + arguments.toString());
+		System.out.println("In: "+ infile +" Out: "+ outfile +" Sort: "+ sortingAlg + " Arguments: " + arguments.toString());
 		
 		Person.SortArguments = arguments;
 		
 		FileHandler fh = new FileHandler();
 		ArrayList<Person> list = fh.ParseFile(infile);
 		
-		System.out.println("----- File Before ------");
+		System.out.println("----- From File ------");
 		for(Person p : list){
 			System.out.println(p);
 		}
 		
-		if(sortingAlg == "I")
+		if(sortingAlg.compareTo("I") == 0)
 			InsertionSort.insertion_srt(list);
-		else if(sortingAlg  == "O")
+		else if(sortingAlg.compareTo("O") == 0)
 			BubbleSort.bubblesrt(list);
 		
 		
-		System.out.println("----- File After ------");
+		System.out.println("----- Sorted ------");
 		for(Person p : list){
 			System.out.println(p);
 		}
