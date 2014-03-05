@@ -1,0 +1,13 @@
+===Project 1 - Sorting 
+
+We implemented the project according to the given details. The project is also exported as JAR to work as shown in the example.
+We implemented 2 sorting algorithms , the insertion sort as asked and the bubble sort. The reason we chose bubble sort as the 
+second sorting algorithm is because it is similar to insertion sort and someone could use our project to compare these algorithms in practice!
+ 
+In more detail insertion sort is more efficient than bubble sort because in insertion sort the elements comparisons are less as compare to bubble sort. 
+In insertion sorting algorithm we compare the value until all the prior elements are lesser than compared value is not found. 
+This means that the all previous values are lesser than compared value. Thus it is more efficient than the bubble sort.
+Insertion sort is a good choice for small values and for nearly-sorted values. 
+
+Of course we have to note that there are more efficient algorithms such as quick sort, heap sort, or merge sort for large value
+

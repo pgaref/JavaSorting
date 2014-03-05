@@ -13,6 +13,12 @@ public class FileHandler {
 	public ArrayList<Person> ParseFile(String filename){
 		ArrayList<Person> list = new ArrayList<Person>();
 		
+		File f = new File(filename);
+		if(!f.exists() || f.isDirectory()){
+			System.out.println("Input file does not exist!");
+			System.exit(-1);
+		}
+			
 		BufferedReader br = null;
 		 
 		try {
